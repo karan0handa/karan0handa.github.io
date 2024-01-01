@@ -30,7 +30,7 @@ export default {
 			fontFamily: {
 				// Add any custom fonts here
 				sans: [...fontFamily.sans],
-				serif: [...fontFamily.serif],
+				serif: ['"Crimson Pro Variable"', ...fontFamily.serif],
 			},
 			transitionProperty: {
 				height: "height",
