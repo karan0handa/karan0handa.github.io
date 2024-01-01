@@ -35,9 +35,9 @@ const socialLinks: Array<{
 ];
 ---
 
-<div class="flex flex-wrap items-end gap-x-4">
+<div class="z-50 flex flex-wrap items-center gap-x-4">
 	<p>Find me on</p>
-	<ul class="flex flex-1 items-center gap-x-2 sm:flex-initial">
+	<ul class="flex flex-1 gap-x-2 pr-16">
 		{
 			socialLinks.map(({ link, name, friendlyName, isWebmention }) => (
 				<li class="flex">

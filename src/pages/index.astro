@@ -21,15 +21,15 @@ const openSourceContributions: Array<{ title: string; desc: string; href: string
 	},
 	{
 		title: "Tinygrad (George Hotz)",
-		desc: "Simple and powerful neural network framework.",
+		desc: "Simple and Powerful Neural Network Framework.",
 		href: "https://github.com/tinygrad/tinygrad/pulls?q=is%3Apr+author%3Akaran0handa",
 	},
 ];
 ---
 
 <PageLayout meta={{ title: "Home" }}>
-	<section>
-		<h1 class="title mb-6">Hi, I'm Karan! 🙏🏼</h1>
+	<section class="relative z-0 overflow-hidden rounded-xl p-10 shadow-xl">
+		<h1 class="title mb-6">Hi, I'm Karan! 🙏</h1>
 		<p class="mb-4">
 			"Obsesively growing" is the closest phrase that comes to describing what I'm doing and will
 			hopefully be doing for the rest of my life. Currently I'm building and learning with really
@@ -37,6 +37,9 @@ const openSourceContributions: Array<{ title: string; desc: string; href: string
 			repository.
 		</p>
 		<SocialList />
+		<script src="../utils/animation.ts"></script>
+		<canvas class="zdog-canvas absolute -bottom-20 -right-20 z-20" width="200" height="220"
+		></canvas>
 	</section>
 	<section aria-label="Blog post list" class="mt-16">
 		<h2 class="title mb-4 text-xl">Posts</h2>
