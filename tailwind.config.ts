@@ -110,6 +110,16 @@ export default {
 				},
 			}),
 		},
+		fontSize: {
+			sm: '1.2rem',
+			base: '1.4rem',
+			lg: '1.7rem',
+			xl: '2.2rem',
+			'2xl': '2.9rem',
+			'3xl': '3.6rem',
+			'4xl': '4.7rem',
+			'5xl': '6rem'
+		}
 	},
 	plugins: [
 		require("@tailwindcss/typography"),
