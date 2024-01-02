@@ -4,7 +4,7 @@ console.log('yo')
 
 let illo = new Zdog.Illustration({
     element: '.zdog-canvas',
-    rotate: { x: -Zdog.TAU / 10, y: Zdog.TAU / 8 },
+    rotate: { x: -Zdog.TAU / 2.2, y: Zdog.TAU / 8 },
     dragRotate: true,
 })
 
@@ -46,8 +46,8 @@ bigCube.copy({
 })
 
 function animate() {
-    smallGroup.rotate.y += 0.01
-    bigCube.rotate.y -= 0.01
+    smallGroup.rotate.y += 0.001
+    bigCube.rotate.y -= 0.003
     // Fun rotation
     // illo.rotate.z += 0.01
     illo.updateRenderGraph()
