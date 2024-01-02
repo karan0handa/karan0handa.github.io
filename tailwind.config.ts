@@ -112,6 +112,7 @@ export default {
 			}),
 		},
 		fontSize: {
+			xs: '1rem',
 			sm: '1.2rem',
 			base: '1.4rem',
 			lg: '1.7rem',
