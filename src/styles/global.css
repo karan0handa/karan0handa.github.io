@@ -12,6 +12,7 @@
 		--theme-accent: 202deg 88% 50%;
 		--theme-accent-2: 0deg 0% 7%;
 		--theme-quote: 202deg 68% 48%;
+		--theme-secondary: 0deg 0% 90%;
 	}
 
 	:root.dark {
@@ -22,6 +23,7 @@
 		--theme-accent: 202deg 88% 78%;
 		--theme-accent-2: 0deg 0% 93%;
 		--theme-quote: 202deg 88% 88%;
+		--theme-secondary: 0deg 0% 30%;
 	}
 
 	html {

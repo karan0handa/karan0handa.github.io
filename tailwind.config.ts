@@ -26,6 +26,7 @@ export default {
 				accent: "hsl(var(--theme-accent) / <alpha-value>)",
 				"accent-2": "hsl(var(--theme-accent-2) / <alpha-value>)",
 				quote: "hsl(var(--theme-quote) / <alpha-value>)",
+				secondary: "hsl(var(--theme-secondary) / <alpha-value>)",
 			},
 			fontFamily: {
 				// Add any custom fonts here
