@@ -11,16 +11,15 @@ let illo = new Zdog.Illustration({
 console.log(illo)
 
 let smallGroup = new Zdog.Group({ addTo: illo })
-let bigGroup = new Zdog.Group({ addTo: illo })
 
 let smallCube = new Zdog.Box({
     addTo: smallGroup,
-    width: 50,
-    height: 50,
-    depth: 50,
+    width: 40,
+    height: 40,
+    depth: 40,
     stroke: false,
-    fill: true,
-    color: '#175d96'
+    fill: false,
+    color: '#075f96'
 })
 smallCube.copy({
     addTo: smallGroup,
@@ -45,9 +44,21 @@ bigCube.copy({
     color: '#FFF'
 })
 
+let bigCubeRotation = 0.2
+let smallCubeRotation = 0.2
+
 function animate() {
-    smallGroup.rotate.y += 0.001
-    bigCube.rotate.y -= 0.003
+
+    if (bigCubeRotation > 0.003) {
+        bigCubeRotation -= 0.001;
+    }
+    if (smallCubeRotation > 0.001) {
+        smallCubeRotation -= 0.001;
+    }
+
+    smallGroup.rotate.y += smallCubeRotation
+    bigCube.rotate.y -= bigCubeRotation
+
     // Fun rotation
     // illo.rotate.z += 0.01
     illo.updateRenderGraph()

@@ -20,42 +20,15 @@ export default {
 	theme: {
 		extend: {
 			fontSize: {
-				"4xl": [
-					"4.768rem",
-					"6rem"
-				],
-				"3xl": [
-					"3.815rem",
-					"4.5rem"
-				],
-				"2xl": [
-					"3.052rem",
-					"4.5rem"
-				],
-				"xl": [
-					"2.441rem",
-					"3rem"
-				],
-				"lg": [
-					"1.953rem",
-					"3rem"
-				],
-				"md": [
-					"1.563rem",
-					"3rem"
-				],
-				"base": [
-					"1.25rem",
-					"3rem"
-				],
-				"sm": [
-					"1rem",
-					"1.5rem"
-				],
-				"xs": [
-					"0.8rem",
-					"1.5rem"
-				]
+				"4xl": "4.768rem",
+				"3xl": "3.815rem",
+				"2xl": "3.052rem",
+				"xl": "2.441rem",
+				"lg": "1.953rem",
+				"md": "1.563rem",
+				"base": "1.25rem",
+				"sm": "1rem",
+				"xs": "0.8rem",
 			},
 			spacing: {
 				"quarter": "0.375rem",
@@ -169,7 +142,7 @@ export default {
 		plugin(function ({ addComponents }) {
 			addComponents({
 				".cactus-link": {
-					"@apply bg-[size:100%_6px] bg-bottom bg-repeat-x": {},
+					"@apply bg-[size:100%_6px] bg-bottom text-base bg-repeat-x": {},
 					backgroundImage:
 						"linear-gradient(transparent,transparent 5px,hsl(var(--theme-text)) 5px,hsl(var(--theme-text)))",
 					"&:hover": {
