@@ -15,9 +15,9 @@ let bigGroup = new Zdog.Group({ addTo: illo })
 
 let smallCube = new Zdog.Box({
     addTo: smallGroup,
-    width: 60,
-    height: 60,
-    depth: 60,
+    width: 50,
+    height: 50,
+    depth: 50,
     stroke: false,
     fill: true,
     color: '#175d96'
@@ -31,16 +31,16 @@ smallCube.copy({
 
 let bigCube = new Zdog.Box({
     addTo: illo,
-    width: 120,
-    height: 120,
-    depth: 120,
+    width: 100,
+    height: 100,
+    depth: 100,
     stroke: false,
     fill: true,
     color: 'rgba(141, 214, 249, 0.5)'
 })
 bigCube.copy({
     addTo: bigCube,
-    stroke: 3,
+    stroke: 1,
     fill: false,
     color: '#FFF'
 })
