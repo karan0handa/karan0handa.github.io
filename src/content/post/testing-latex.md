@@ -16,3 +16,5 @@ A = \begin{bmatrix}
 a & b & c
 \end{bmatrix}
 $$
+
+This works quite beautifully!
