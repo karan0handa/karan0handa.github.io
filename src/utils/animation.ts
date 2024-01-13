@@ -40,7 +40,7 @@ let bigCube = new Zdog.Box({
 })
 bigCube.copy({
     addTo: bigCube,
-    stroke: 1,
+    stroke: 2,
     fill: false,
     color: '#FFF'
 })
