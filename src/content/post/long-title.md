@@ -2,7 +2,7 @@
 title: "First Post!"
 description: "Test description! It's really sad that it requires 50 characters but oh well."
 publishDate: "01 Jan 2024"
-tags: [""]
+tags: ["test"]
 ---
 
 ## First Post!
