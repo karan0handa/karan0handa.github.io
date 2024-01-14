@@ -44,23 +44,32 @@ bigCube.copy({
     color: '#FFF'
 })
 
-let bigCubeRotation = 0.2
-let smallCubeRotation = 0.2
+let bigCubeRotation = 0.15
+let smallCubeRotation = 0.15
+
+let bigCubeDeceleration = 0.01
+let smallCubeDeceleration = 0.01
 
 function animate() {
 
     if (bigCubeRotation > 0.003) {
-        bigCubeRotation -= 0.001;
+        if (bigCubeDeceleration > 0.001) {
+            bigCubeDeceleration -= 0.001
+        }
+        bigCubeRotation -= bigCubeDeceleration;
     }
     if (smallCubeRotation > 0.001) {
-        smallCubeRotation -= 0.001;
+        if (smallCubeDeceleration > 0.001) {
+            smallCubeDeceleration -= 0.001
+        }
+        smallCubeRotation -= smallCubeDeceleration;
     }
 
     smallGroup.rotate.y += smallCubeRotation
     bigCube.rotate.y -= bigCubeRotation
 
     // Fun rotation
-    // illo.rotate.z += 0.01
+    smallGroup.rotate.z += 0.001
     illo.updateRenderGraph()
     requestAnimationFrame(animate)
 }
