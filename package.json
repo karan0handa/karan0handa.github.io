@@ -37,7 +37,7 @@
 		"@types/zdog": "^1.1.7",
 		"@typescript-eslint/eslint-plugin": "^6.13.2",
 		"@typescript-eslint/parser": "^6.13.2",
-		"astro-eslint-parser": "^0.16.0",
+		"astro-eslint-parser": "^1.0.1",
 		"autoprefixer": "^10.4.16",
 		"eslint": "^8.55.0",
 		"eslint-config-prettier": "^9.1.0",
